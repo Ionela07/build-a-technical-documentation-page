@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="navbar">
+    <header>CSS Technical Documentation</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#Syntax">Syntax</a></li>
+      <li><a class="nav-link" href="#Selectors">Selectors</a></li>
+      <li><a class="nav-link" href="#Properties">Properties</a></li>
+      <li><a class="nav-link" href="#Responsive_Design">Responsive Design</a></li>
+      <li><a class="nav-link" href="#Animation">Animation</a></li>
+      <li><a class="nav-link" href="#Grid">Grid</a></li>
+      <li><a class="nav-link" href="#Flexbox">Flexbox</a></li>
+      <li><a class="nav-link" href="#Variables">Variables</a></li>
+      <li><a class="nav-link" href="#Reference">Reference</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+        <article>
+          <p>CSS (Cascading Style Sheets) is used to style and lay out web pages - for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features. This module provides a gentle beginning to your path towards CSS mastery with the basics of how it works, what the syntax looks like, and how you can start using it to add styling to HTML.</p>
+        </article>     
+    </section>
+    <section class="main-section" id="Syntax">
+      <header>Syntax</header>
+        <article>
+          <p>The CSS syntax module describes, in general terms, the structure and syntax of cascading stylesheets, or CSS. It defines CSS as the language for describing the rendering of structured documents (such as HTML and XML), on the web and elsewhere.</p>
+          <p>This module doesn't define any properties, data types, functions, or at-rules. Rather, it elaborates on how all of these features should be defined and how user agents should parse CSS.</p>
+        </article>    
+    </section>
+    <section class="main-section" id="Selectors">
+      <header>Selectors</header>
+        <article>
+          <p>A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser which HTML elements should be selected to have the CSS property values inside the rule applied to them. The element or elements which are selected by the selector are referred to as the subject of the selector.</p>
+          <code>h1 {
+  color: blue;
+}
+
+.special {
+  color: blue;
+}
+</code>
+        </article>     
+    </section>
+    <section class="main-section" id="Properties">
+      <header>Properties</header>
+        <article>
+          <p>The CSS Properties and Values API — part of the CSS Houdini umbrella of APIs — allows developers to explicitly define their CSS custom properties, allowing for property type checking, default values, and properties that do or do not inherit their value.</p>
+         <p>The CSS.registerProperty() static method registers custom properties, allowing for property type checking, default values, and properties that do or do not inherit their value.</p>
+        <p>The @property CSS at-rule is part of the CSS Houdini set of APIs. It allows developers to explicitly define CSS custom properties, allowing for property type checking and constraining, setting default values, and defining whether a custom property can inherit values or not.</p>
+        </article>    
+    </section>
+    <section class="main-section" id="Responsive_Design">
+      <header>Responsive Design</header>
+        <article>
+          <p>Responsive web design (RWD) is a web design approach to make web pages render well on all screen sizes and resolutions while ensuring good usability. It is the way to design for a multi-device web. In this article, we'll help you understand some techniques that can be used to master it.</p>
+         <p>Before responsive web design became the standard approach for making websites work across different device types, web developers used to talk about mobile web design, mobile web development, or sometimes, mobile-friendly design. These are basically the same as responsive web design — the goals are to make sure that websites work well across devices with different physical attributes (screen size, resolution) in terms of layout, content (text and media), and performance.</p>
+        </article>     
+    </section>
+    <section class="main-section" id="Animation">
+      <header>Animation</header>
+        <article>
+          <p>This property is a shorthand for the following CSS properties:</p>
+          <ul>
+            <li>animation-delay</li>
+            <li>animation-direction</li>
+            <li>animation-duration</li>
+            <li>animation-fill-mode</li>
+            <li>animation-iteration-count</li>
+            <li>animation-name</li>
+            <li>animation-play-state</li>
+            <li>animation-timeline</li>
+            <li>animation-timing-function</li>
+          </ul>
+        </article>     
+    </section>
+    <section class="main-section" id="Grid">
+      <header>Grid</header>
+        <article>
+          The grid CSS property is a shorthand property that sets all of the explicit and implicit grid properties in a single declaration.
+         <code>grid: auto-flow / 1fr 1fr 1fr;</code>
+         <br>
+         <code>grid: auto-flow dense / 40px 40px 1fr;</code>
+         <br>
+         <code>grid: repeat(3, 80px) / auto-flow;</code>
+        </article>     
+    </section>
+    <section class="main-section" id="Flexbox">
+      <header>Flexbox</header>
+        <article>
+          Flexbox is a one-dimensional layout method for arranging items in rows or columns. Items flex (expand) to fill additional space or shrink to fit into smaller spaces. This article explains all the fundamentals.
+        <code>section {
+  display: flex;
+}</code>
+This causes the <section> element to become a flex container and its children become flex items.
+        </article>  
+    </section>
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+        <articl>
+          <p>Custom properties (sometimes referred to as CSS variables or cascading variables) are entities defined by CSS authors that represent specific values to be reused throughout a document. They are set using the @property at-rule or by custom property syntax (e.g., --primary-color: blue;). Custom properties are accessed using the CSS var() function (e.g., color: var(--primary-color);).</p>
+          <ul>
+            <li>In CSS, you can declare a custom property using two dashes as a prefix for the property name, or by using the @property at-rule. The following sections describe how to use these two methods.</li>
+            <li>A custom property prefixed with two dashes begins with --, followed by the property name (e.g., --my-property), and a property value that can be any valid CSS value. </li>
+          </ul>
+        </article>
+      </section>
+    <section class="main-section" id="Reference">
+      <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+              All information is taken from <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS" target="_blank">MDN.</a>
+            </li>
+          </ul>
+        </article>      
+    </section>
+  </main>
+</body>
+</html>
